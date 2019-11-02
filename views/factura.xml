@@ -1,0 +1,53 @@
+<odoo>
+    <data>
+        <!--form view Hospital -->
+        <record id="valerio.factura_form_view" model="ir.ui.view">
+            <field name="name">valerio.factura.form.view</field>
+            <field name="model">valerio.factura</field>
+            <field name="arch" type="xml">
+                <form string="Form Factura">
+                    <sheet>
+                        <group>
+                            <field name="client"/>
+                     <field name="payment"/>
+                     <field name="bill"/>
+                     <field name="expiration"/>
+                     <field name="dendor"/>
+                     <field name="state"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--tree view hospital-->
+        <record id="valerio.factura_tree_view" model="ir.ui.view">
+            <field name="name">valerio.factura.tree.view</field>
+            <field name="model">valerio.factura</field>
+            <field name="arch" type="xml">
+                <tree string="Tree factura">
+                     <field name="client"/>
+                     <field name="payment"/>
+                     <field name="bill"/>
+                     <field name="expiration"/>
+                     <field name="dendor"/>
+                     <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="valerio_factura_action_view" model="ir.actions.act_window">
+            <field name="name">Factura</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">valerio.factura</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_root_factura" name="Factura"/>
+        <menuitem parent="menu_root_factura" id="menu_factura" string="facturas"
+                  action="valerio_factura_action_view"/>
+
+    </data>
+
+</odoo>

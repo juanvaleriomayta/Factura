@@ -1,0 +1,70 @@
+<odoo>
+    <data>
+        <!--<record model="ir.iu.view" id="ldelacruz.list">-->
+            <!--<field name="name">Lista_ldelacruzP</field>-->
+            <!--<field name="model">ldelacruz.ldelacruz</field>-->
+            <!--<field name="arch" type="arch">-->
+                <!--<tree>-->
+                    <!--<field name="campo"/>-->
+                    <!--<field name="valor1"/>-->
+                    <!--<field name="texto"/>-->
+                <!--</tree>-->
+            <!--</field>-->
+        <!--</record>-->
+<!--asda-->
+        <!--<record model="ir.actions.act_window" id="form_view_action">-->
+            <!--<field name="name">Formulario</field>-->
+            <!--<field name="res_model">ldelacruz.ldelacruz</field>-->
+            <!--<field name="view_Type">form</field>-->
+            <!--<field name="view_mode">tree, form</field>-->
+            <!--<field name="context">{}</field>-->
+            <!--<field name="help" type="html">-->
+                <!--<p class="oe_view_nocontent_create">-->
+                    <!--Click para crear un nuevo registro-->
+                <!--</p>-->
+                <!--<p>Esto es una clase TEST desarrollada para aprender OpenERP</p>-->
+            <!--</field>-->
+        <!--</record>-->
+
+        <!--<menuitem name="Menu" id="Menu_root"/>-->
+
+        <!--&lt;!&ndash; Categorias &ndash;&gt;-->
+        <!--<menuitem name="Inicio" id="Submenu" parent="Menu_root"/>-->
+
+        <!--&lt;!&ndash;Acciones &ndash;&gt;-->
+        <!--<menuitem name="Primer Lista" id="list" parent="Submenu"-->
+                  <!--action="form_view_action"/>-->
+
+
+        <!--        <record id="account_invoice_form_inherit" model="ir.ui.view">-->
+<!--            <field name="name">account.invoice.form.inherit</field>-->
+<!--            <field name="model">account.invoice</field>-->
+<!--            <field name="inherit_id" ref="account.invoice_form"/>-->
+<!--            <field name="arch" type="xml">-->
+
+<!--                <xpath expr="//field[@name='payment_term_id']" position="after">-->
+<!--                    <field name="sale_type"/>-->
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
+
+
+<!--        <record id="sale_order_form_inherit" model="ir.ui.view">-->
+<!--            <field name="name">sale.order.form.inherit</field>-->
+<!--            <field name="model">sale.order</field>-->
+<!--            <field name="inherit_id" ref="sale.view_order_form"/>-->
+<!--            <field name="arch" type="xml">-->
+
+<!--                <xpath expr="//field[@name='payment_term_id']" position="after">-->
+<!--                    <field name="export_sale"/>-->
+<!--                </xpath>-->
+<!--                <xpath expr="//button[@name='action_unlock']" position="after">-->
+<!--                    <button name="print_console" type="object" string="Imprimir Consola"/>-->
+<!--                </xpath>-->
+
+<!--            </field>-->
+<!--        </record>-->
+
+
+    </data>
+</odoo>
